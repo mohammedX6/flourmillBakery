@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Express Flour Delivery</string>
+    <string name="google_map_api_key">AIzaSyA5dC9Iroe5jU2Lo1eldFBLDvxO70jfy_c</string>
+
+    <string name="homelayout">Track Shipment</string>
+    <string name="orderlayout">Order</string>
+    <string name="accountLayout">My Account</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!-- Preference Titles -->
+
+    <!-- Messages Preferences -->
+
+    <!-- Sync Preferences -->
+
+    <string-array name="spinner_items">
+        <item><b>Select Night Mode</b></item>
+        <item>FOLLLOW_SYSTEM</item>
+        <item>YES</item>
+        <item>NO</item>
+        <item>AUTO</item>
+    </string-array>
+</resources>

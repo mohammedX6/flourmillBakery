@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderfile"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="Order Details"
+                    fancy:fb_textColor="#424242" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/fonts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Amount : "
+                        android:textColor="#424242" />
+
+                    <TextView
+                        android:id="@+id/total_amountU"
+                        style="@style/headingfonts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="10"
+                        android:textColor="@color/colorPrimaryDark2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/fonts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delivery Charges : "
+                        android:textColor="#424242" />
+
+                    <TextView
+                        android:id="@+id/chargestotal"
+                        style="@style/headingfonts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Included "
+                        android:textColor="@color/colorPrimaryDark2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/fonts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total : "
+                        android:textColor="#424242" />
+
+                    <TextView
+                        android:id="@+id/totalwithcharges"
+                        style="@style/headingfonts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="10$"
+                        android:textColor="@color/colorPrimaryDark2" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/headingfonts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:text="Payment Mode :"
+                android:textColor="#424242" />
+
+            <com.whygraphics.multilineradiogroup.MultiLineRadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                app:default_button="COD"
+                app:max_in_row="2"
+                app:radio_buttons="@array/radio_buttons" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/grey_light" />
+
+            <TextView
+                style="@style/headingfonts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_vertical"
+                android:text="Complete Address :"
+                android:textColor="#424242" />
+
+            <LinearLayout
+                android:id="@+id/linerclick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderfile"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="Order Details"
+                    fancy:fb_textColor="#424242" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/fonts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name : "
+                        android:textColor="#424242" />
+
+                    <TextView
+                        android:id="@+id/namecard"
+                        style="@style/headingfonts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="ali"
+                        android:textColor="@color/colorPrimaryDark2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/fonts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile Number : "
+                        android:textColor="#424242" />
+
+                    <TextView
+                        android:id="@+id/mobile"
+                        style="@style/headingfonts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="0770133245"
+                        android:textColor="@color/colorPrimaryDark2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/fonts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address : "
+                        android:textColor="#424242" />
+
+                    <TextView
+                        android:id="@+id/location"
+                        style="@style/headingfonts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Amman"
+                        android:textColor="@color/colorPrimaryDark2" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Order Comment"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@drawable/comment"
+                app:met_primaryColor="@color/colorPrimaryDark" />
+
+
+            <ImageView
+                android:id="@+id/imageclcik"
+                style="@style/AppTheme.RoundedCornerMaterialButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="50dp"
+                android:background="@color/colorPrimary2"
+                android:elevation="40dp"
+                android:padding="17dp"
+                android:src="@drawable/ordernow" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

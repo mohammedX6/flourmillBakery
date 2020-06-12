@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.flourmillco.flourmill_1">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name="com.flourmillco.flourmill_1.SingletonUser.UserSingle"
+
+        android:allowBackup="true"
+
+        android:icon="@mipmap/resizedc"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/resizedc"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.flourmillco.flourmill_1.UI.RatingDetailsActivity" />
+        <activity android:name="com.flourmillco.flourmill_1.UI.RatingActivity" />
+        <activity android:name="com.flourmillco.flourmill_1.UI.OrderHistoryDetailsActivity" />
+        <activity android:name="com.flourmillco.flourmill_1.UI.OrderHistoryActivity" />
+        <activity android:name="com.flourmillco.flourmill_1.UI.OrderPlacedActivity" />
+        <activity android:name="com.flourmillco.flourmill_1.UI.OrderDetailsActivity" />
+        <activity android:name="com.flourmillco.flourmill_1.UI.BasketActivity" />
+        <activity android:name="com.flourmillco.flourmill_1.UI.SingleProductActivity" />
+        <activity android:name="com.flourmillco.flourmill_1.UI.SettingsActivity" />
+        <activity android:name="com.flourmillco.flourmill_1.UI.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.flourmillco.flourmill_1.UI.LoginActivity" />
+        <activity android:name="com.flourmillco.flourmill_1.UI.SignUpActivity" />
+        <activity android:name="com.flourmillco.flourmill_1.UI.HomeActivity" />
+        <activity android:name="com.flourmillco.flourmill_1.UI.MiddleActivity" />
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_api_key" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+
+        <service
+            android:name="com.flourmillco.flourmill_1.Services.LocationService"
+            android:stopWithTask="true" />
+
+
+    </application>
+
+
+</manifest>

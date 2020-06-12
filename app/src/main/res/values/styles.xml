@@ -1,0 +1,27 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="AppTheme.RoundedCornerMaterialButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/rounded_shape</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+    <style name="headingfonts">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="fonts">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+</resources>
